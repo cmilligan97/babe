@@ -218,8 +218,8 @@ noBtn.addEventListener("click",()=>{
 
   noScale-=0.08;
 
-  // Gentle growth at first, huge at the end
-  yesScale = 1 + (clickCount * 0.45);
+  // Slower growth so all NO prompts show
+  yesScale = 1 + (clickCount * 0.35);
 
   noBtn.textContent=noTexts[Math.min(clickCount,noTexts.length-1)];
 
